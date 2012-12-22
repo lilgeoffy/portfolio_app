@@ -1,6 +1,6 @@
 PortfolioApp::Application.routes.draw do
   root :to => "home#index"
-  resources :project do
+  resources :projects do
     member do
       get'summary'
     end
