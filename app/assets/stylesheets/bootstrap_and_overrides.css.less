@@ -2,7 +2,17 @@
 //Modified padding for picture in navbar
 body { padding-top: 55px; }
 //altered inner navbar to center text
-.navbar-inner {
+.navbar .nav,
+.navbar .nav > li 
+{
+    float:none;
+    display:inline-block;
+    *display:inline; /* ie7 fix */
+    *zoom:1; /* hasLayout ie7 trigger */
+    vertical-align: top;
+}
+.navbar-inner 
+{
     text-align:center;
 }
 @import "twitter/bootstrap/responsive";
